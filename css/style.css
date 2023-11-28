@@ -1,0 +1,239 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.categorias {
+    float: left;
+    margin-right: 20px;
+    
+}
+.categorias nav ul{
+    display: list-item;
+    list-style: none;
+    gap: 50px;
+    line-height: 2;
+}
+
+.categorias nav ul li a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+
+.variosProductos {
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr  ;
+    gap: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.variosProductos img {
+    width: 100%;
+    height: auto;
+}
+
+
+.footer {
+    background-color: whitesmoke;
+    padding: 25px;
+    display: flex;
+    flex-direction:inherit;
+    justify-content: space-between;
+    align-items:center;
+    border: 1px dashed black;
+    margin-top: 0px;
+}
+
+.footer .suscriptions div input {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+.footer .help ul{
+    display: list-item;
+    list-style: none;
+    gap: 50px;
+    line-height: 2;
+}
+
+.footer .help ul li a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.footer .moreInfo ul{
+    display: list-item;
+    list-style: none;
+    gap: 20px;
+}
+
+.footer .moreInfo ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+#header {
+    background-color: white;
+    padding: 25px;
+    display: flex;
+    flex-direction:inherit;
+    justify-content: space-between;
+    align-items:center;
+    border: 1px dashed black;
+}
+
+#header .logo {
+    background-color: white;
+    color: white;
+    padding: 20px;
+    border: 1px dashed black
+}
+#header .logo a {
+    text-decoration: none;
+    color: black
+}
+#header .menu ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+#header .carro ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+#header .menu ul li a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+#header .carro ul li a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+#header .menu ul li a:hover {
+    background-color: black;
+}
+
+
+.parent {
+    position: relative;
+}
+
+.flexItem {
+    display: contents;
+    height: 400px;
+    gap: 10px;
+    margin-bottom: 0px;
+}
+
+.flexItem a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: auto;
+    text-align:center;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+
+.flexItem img {
+    width: 100%;
+    height: auto;
+}
+
+.title {
+    background-color: black;
+    color: white;
+    padding: 25px;
+    display: flex;
+    flex-direction:inherit;
+    justify-content: center;
+    align-items:center;
+    border: 1px dashed black;
+    margin-bottom: 10px;
+}
+
+.productDescription {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.item  img {
+    width: 300px;
+    height: auto;
+    margin: 20px;
+    
+}
+
+.item {
+     
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item p {
+    border: 5px solid black;
+}
+
+
+
+
+
+
+
+
+@font-face {
+    src: url('https://fonts.googleapis.com/css2?family=Manrope&family=Nosifer&family=Sedgwick+Ave+Display&display=swap');
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Nosifer', sans-serif;
+    font-family: 'Sedgwick Ave Display', cursive;
+    
+}
+
+h1 {
+    font-family: 'Nosifer', sans-serif;
+}
+a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+h2 {
+    font-family: 'Nosifer', sans-serif;
+    font-weight: 800;
+}
