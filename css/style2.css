@@ -298,3 +298,44 @@ h2 {
     height: auto;
     width: 100%;
 }
+
+
+.product {
+    display: flex;
+    flex-direction: column;
+    border: black solid 5px;
+    gap: 20px;
+    padding: 8px 8px 8px 8px;
+}
+
+
+.product_description--material:nth-child(1) {
+    order:3;
+}
+.product_image:nth-child(2) {
+    order: 1;
+}
+.product_description--other:nth-child(3) {
+    order: 2;
+}
+
+
+.product_description--material {
+    border: black solid 3px;
+}
+
+
+.product_image {
+    align-self: center;
+    justify-self: center;
+}
+
+.product_image img{
+    width: 100%;
+    height: auto;
+    
+}
+
+.product_description--other {
+    border: black solid 3px;
+}
