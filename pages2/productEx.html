@@ -4,75 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>productoEjemplo</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nosifer&family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
 
 </head>
 <body>
-    <header id="header">
-        <nav class="menu">
+
+    <header class="header">
+        <nav class="header_menu--category"">
             <ul>
                 <li>
-                    <a href="./productMen.html">Hombre</a>
+                    <a href="productWomen.html">Mujeres</a>
                 </li>
                 <li>
-                    <a href="./productWomen.html">Mujer</a>
+                    <a href="productMen.html">Hombre</a>
                 </li>
-                
             </ul>
-        </nav> 
+        </nav>
 
-        <div class="logo">
-            <p><a href="../index.html">Logo</a></p>
+        <div class="header_logo">
+            <a href="../index2.html">Logo</a>
         </div>
 
-        <nav class="carro">
+        <nav class="header_menu--else">
             <ul>
                 <li>
-                    <a href="./carro.html">Carro</a>
+                    <a href="../pages2/carro.html">Carro</a>
                 </li>
             </ul>
-
         </nav>
-    </header> 
+    </header>
+
     <section class="title">
-        <h1>Producto Ejemplo</h1>
+        <h1>Producto Generico</h1>
     </section>
 
-    <section class="productDescription">
-        <div class="item">
+    <section class="product">
+        <div class="product_descrption--Material">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur iure inventore ut odio assumenda doloremque, minus quam eius fugit ea minima impedit provident possimus sit vel dolorum doloribus aut aliquid?</p>
         </div>
 
-        <div class="item">
+        <div class="product_image">
             <img src="../images/productoEjemplo.jpg" alt="producto1">
         </div>
 
-        <div class="item">
+        <div class="product_descrption--other">
             
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur iure inventore ut odio assumenda doloremque, minus quam eius fugit ea minima impedit provident possimus sit vel dolorum doloribus aut aliquid?</p>   
         </div>
 
     </section>
 
-        
-    
-    
-
 
     <footer class="footer">
-        <div class="suscriptions">
-            <form action="" method="" enctype="text/plain" class="suscriptions">
-                <h2>Suscribete</h2>
-                <p>Recibe correos sobre productos, promociones, eventos e información sobre XXX</p>
-                <input type="email" name="mail" id="mail" placeholder="correo electronico">
-            </form>
-            <input type="submit" value="Suscribirme">
-        </div>
+
+
+        <form class="footer_suscriptions">
+            <h2>Suscríbete</h2>
+            <p>Recibe correos sobre productos, promociones, eventos e información sobre XXX.</p>
+            <input id="email" type="email" placeholder="Correo Electrónico">
+            <button  onclick="submitContactForm()" type="button" class="footer_suscriptions--button">Suscribirme</button>
+        </form>
+      
         
-        <nav class="help">
+        <nav class="footer_help">
             <h2>Necesitas Ayuda</h2>
             <ul>
                 <li>
@@ -87,7 +84,7 @@
             </ul>
         </nav> 
 
-        <nav class="moreInfo">
+        <nav class="footer_moreInfo">
             <h2>Más Información</h2>
             <ul>
                 <li>
@@ -107,10 +104,6 @@
         
 
     </footer>
-        
-   
-    
 
-    
 </body>
 </html>
