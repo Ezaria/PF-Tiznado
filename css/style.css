@@ -6,217 +6,6 @@
     font-family: sans-serif;
 }
 
-
-.categorias {
-    float: left;
-    margin-right: 20px;
-    
-}
-.categorias nav ul{
-    display: list-item;
-    list-style: none;
-    gap: 50px;
-    line-height: 2;
-}
-
-.categorias nav ul li a {
-    text-decoration: none;
-    background-color: black;
-    color: white;
-    padding: 5px 15px;
-    border-radius: 20px;
-}
-
-
-.variosProductos {
-    display: grid;
-    grid-template-rows: 100px 100px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr  ;
-    gap: 10px;
-    margin-bottom: 10px;
-    
-}
-
-.variosProductos img {
-    width: 100%;
-    height: auto;
-}
-
-
-.footer {
-    background-color: whitesmoke;
-    padding: 25px;
-    display: flex;
-    flex-direction:inherit;
-    justify-content: space-between;
-    align-items:center;
-    border: 1px dashed black;
-    margin-top: 0px;
-}
-
-.footer .suscriptions div input {
-    text-decoration: none;
-    background-color: black;
-    color: white;
-    padding: 5px 15px;
-    border-radius: 20px;
-}
-.footer .help ul{
-    display: list-item;
-    list-style: none;
-    gap: 50px;
-    line-height: 2;
-}
-
-.footer .help ul li a {
-    text-decoration: none;
-    background-color: black;
-    color: white;
-    padding: 5px 15px;
-    border-radius: 20px;
-}
-
-.footer .moreInfo ul{
-    display: list-item;
-    list-style: none;
-    gap: 20px;
-}
-
-.footer .moreInfo ul li a {
-    text-decoration: none;
-    color: black;
-}
-
-
-#header {
-    background-color: white;
-    padding: 25px;
-    display: flex;
-    flex-direction:inherit;
-    justify-content: space-between;
-    align-items:center;
-    border: 1px dashed black;
-}
-
-#header .logo {
-    background-color: white;
-    color: white;
-    padding: 20px;
-    border: 1px dashed black
-}
-#header .logo a {
-    text-decoration: none;
-    color: black
-}
-#header .menu ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
-
-#header .carro ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
-#header .menu ul li a {
-    text-decoration: none;
-    background-color: black;
-    color: white;
-    padding: 5px 15px;
-    border-radius: 20px;
-}
-
-#header .carro ul li a {
-    text-decoration: none;
-    background-color: black;
-    color: white;
-    padding: 5px 15px;
-    border-radius: 20px;
-}
-#header .menu ul li a:hover {
-    background-color: black;
-}
-
-
-.parent {
-    position: relative;
-}
-
-.flexItem {
-    display: contents;
-    height: 400px;
-    gap: 10px;
-    margin-bottom: 0px;
-}
-
-.flexItem a {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 2px solid black;
-    background-color: black;
-    color: white;
-    width: 200px;
-    height: auto;
-    text-align:center;
-    border-radius: 20px;
-    text-decoration: none;
-
-}
-
-.flexItem img {
-    width: 100%;
-    height: auto;
-}
-
-.title {
-    background-color: black;
-    color: white;
-    padding: 25px;
-    display: flex;
-    flex-direction:inherit;
-    justify-content: center;
-    align-items:center;
-    border: 1px dashed black;
-    margin-bottom: 10px;
-}
-
-.productDescription {
-    display: flex;
-    flex-direction: row;
-}
-
-
-
-.item  img {
-    width: 300px;
-    height: auto;
-    margin: 20px;
-    
-}
-
-.item {
-     
-    position: relative; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.item p {
-    border: 5px solid black;
-}
-
-
-
-
-
-
-
-
 @font-face {
     src: url('https://fonts.googleapis.com/css2?family=Manrope&family=Nosifer&family=Sedgwick+Ave+Display&display=swap');
     font-family: 'Manrope', sans-serif;
@@ -227,13 +16,379 @@
 
 h1 {
     font-family: 'Nosifer', sans-serif;
+    font-weight: 5px;
 }
 a {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
+    font-weight: 50;
 }
 
 h2 {
     font-family: 'Nosifer', sans-serif;
-    font-weight: 800;
+    font-weight: 100;
+}
+
+
+
+.header {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction:inherit;
+    justify-content: space-between;
+    align-items:center;
+    border: 1px black solid;
+    
+}
+
+
+
+
+.header_menu--category ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;   
+}
+
+@media (min-width: 750px)  {
+    .header_menu--category ul {
+        flex-direction: row-reverse;
+    }
+}
+
+
+.header_menu--category ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    padding: 5px 15px;
+    
+}
+
+.header_logo a {
+    text-decoration: none;
+    border: black dashed;
+    color: black;
+    padding: 10px;
+}
+
+.header_logo a:hover {
+    background-color:black;
+}
+
+.header_menu--else ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;  
+}
+
+.header_menu--else ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    padding: 5px 15px;
+}
+
+.title h1{
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+}
+
+@media (min-width: 750px)  {
+    .title h1 {
+        font-size: 30px;
+        padding: 8px;
+    }
+}
+
+.landingPage {
+    display:grid;
+    grid-template-columns: 1fr / 1fr;
+    gap: 10px;
+    grid-template-areas: "centro"; 
+}
+
+.landingPage img {
+    width: 100%;
+    height: auto;
+    grid-area: centro;
+    
+}
+
+.landingPage_button {
+    border: none;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    padding: 5px 15px 5px 15px;
+    height: 30px;
+    grid-area: centro;
+    justify-self: center;
+    align-self: center; 
+}
+
+@media (min-width: 750px)  {
+    .landingPage_button {
+        font-size: 50px;
+        height:70px;
+        
+    }
+}
+
+.landingPage_button:hover {
+    background-color: white;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+@media (min-width: 750px)  {
+    .footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.footer_suscriptions {
+    padding: 15px;
+    display: grid;
+    grid-template: repeat(4,1fr) / 1fr;
+    justify-items: start;
+    align-items: center;
+}
+
+.footer_suscriptions input {
+    border: none;
+    background-color: transparent;
+    color: white;
+    border-bottom: solid 2px #fff;
+    width: 75%;
+}
+.footer_suscriptions--button {
+    border: none;
+    border-radius: 15px;
+    padding: 5px 15px 5px 15px;
+    font-size: larger;
+}
+
+
+
+.footer_help {
+    
+    padding: 15px;
+    justify-items: start;
+    align-items: center;
+    
+}
+
+.footer_help ul li {
+    list-style: none;
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr;
+    height: 60px;
+    width: 220px;
+}
+
+.footer_help ul li a{
+    
+    text-decoration: none;
+    color: white;
+    border: 5px white solid;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 5px 15px 5px 15px;
+    text-align: center;
+}
+
+.footer_moreInfo {
+    padding: 15px;
+    justify-items: start;
+    align-items: center;
+}
+
+.footer_moreInfo ul li {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer_moreInfo ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 750px)  {
+    .display {
+        flex-direction: row;
+    }
+}
+
+.display_filter ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 750px)  {
+    .display_filter ul{
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+.display_filter ul li a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    
+}
+
+.display_product {
+    display: grid;
+    grid-template: auto / 1fr 1fr;
+    grid-gap: 15px;
+    padding: 12px;
+}
+
+@media (min-width: 750px) {
+    .display_product {
+        grid-template: auto / 1fr 1fr 1fr;
+    }
+}
+
+.display_product--generic a {
+    display: flex;
+    flex-direction: column;
+    font-size: 8px;
+    text-decoration: none;
+    color:black;
+    align-items: center;
+}
+@media (min-width: 750px) {
+    .display_product--generic a {
+        font-size: 10px;
+    }
+}
+.display_product--generic a img {
+    height: auto;
+    width: 100%;
+}
+
+
+.product {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 8px 8px 8px 8px;
+    align-items:end;
+}
+
+@media (min-width: 750px) {
+    .product {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+       
+    }
+
+    
+}
+
+.product_description--material:nth-child(1) {
+    order:3;
+}
+.product_image:nth-child(2) {
+    order: 1;
+}
+.product_description--other:nth-child(3) {
+    order: 2;
+}
+
+@media (min-width: 750px) {
+    .product_description--material:nth-child(1) {
+        order:1;
+    }
+    .product_image:nth-child(2) {
+        order: 2;
+    }
+    .product_description--other:nth-child(3) {
+        order: 3;
+    }
+
+    
+}
+
+.product_description--material {
+    align-self: center;
+
+}
+
+
+.product_image {
+    align-self: center;
+    justify-self: center;
+}
+
+.product_image img{
+    width: 100%;
+    height: auto;
+    
+    
+}
+
+.product_description--other {
+    place-self: center;
+}
+
+
+.carousel_space {
+    display:grid;
+    grid-template: 1fr / 20px 1fr 20px ;
+}
+
+#carouselExampleIndicators {
+    width: 100%;
+    height: auto;
+    grid-column: 2;
+}
+
+@media (min-width: 750px) {
+    
+    .carousel_space {
+        display:grid;
+        grid-template: 1fr / 20px 1fr 20px ;
+
+    }
+    #carouselExampleIndicators {
+        width: 30%;
+        height: auto;
+        grid-column: 2;
+        justify-self: center;
+    }
+    
 }
