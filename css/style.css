@@ -42,8 +42,6 @@ h2 {
 }
 
 
-
-
 .header_menu--category ul {
     list-style: none;
     display: flex;
@@ -76,6 +74,7 @@ h2 {
 
 .header_logo a:hover {
     background-color:black;
+    color: white;
 }
 
 .header_menu--else ul {
@@ -110,7 +109,6 @@ h2 {
 
 .landingPage {
     display:grid;
-    grid-template-columns: 1fr / 1fr;
     gap: 10px;
     grid-template-areas: "centro"; 
 }
@@ -128,11 +126,12 @@ h2 {
     color: white;
     background-color: black;
     border-radius: 15px;
-    padding: 5px 15px 5px 15px;
+    padding: 5px 15px;
     height: 30px;
     grid-area: centro;
     justify-self: center;
     align-self: center; 
+    font-size: small;
 }
 
 @media (min-width: 750px)  {
@@ -145,6 +144,7 @@ h2 {
 
 .landingPage_button:hover {
     background-color: white;
+    color: black;
 }
 
 .footer {
@@ -171,7 +171,7 @@ h2 {
     align-items: center;
 }
 
-.footer_suscriptions input {
+.footer_suscriptions--text {
     border: none;
     background-color: transparent;
     color: white;
@@ -197,10 +197,9 @@ h2 {
 
 .footer_help ul li {
     list-style: none;
-    display: grid;
-    grid-template: 1fr 1fr 1fr / 1fr;
-    height: 60px;
-    width: 220px;
+    display: flex;
+    padding: 8px;
+    
 }
 
 .footer_help ul li a{
@@ -213,6 +212,8 @@ h2 {
     padding: 5px 15px 5px 15px;
     text-align: center;
 }
+
+
 
 .footer_moreInfo {
     padding: 15px;
@@ -268,11 +269,14 @@ h2 {
     
 }
 
+
+
 .display_product {
     display: grid;
-    grid-template: auto / 1fr 1fr;
+    grid-template: auto / 1fr;
     grid-gap: 15px;
-    padding: 12px;
+    padding: 12px auto;
+    
 }
 
 @media (min-width: 750px) {
@@ -289,6 +293,8 @@ h2 {
     color:black;
     align-items: center;
 }
+
+
 @media (min-width: 750px) {
     .display_product--generic a {
         font-size: 10px;
