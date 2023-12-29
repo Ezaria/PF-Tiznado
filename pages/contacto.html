@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Principal</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <title>Hombre</title>
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nosifer&family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
@@ -12,10 +12,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <meta name="description" content="La colección XX es nuestro kit de equipo de ciclistas. Piezas resistentes para una temporada de transición. Pasando de la competición al entrenamiento. De los picos rugientes de intensidad a rodar con un objetivo lejano en el horizonte. Un conjunto utilitario de prendas hechas para cualquier clima.">
     <meta name="keywords" content="cycling clothing, collection, team kit, resilient pieces, transition season, competition, training, intensity, goal, weather, performance, quality, design, comfort, versatility, style, functionality, durability, resistance, innovation, ropa de ciclista, colección, kit de equipo, piezas resistentes, temporada de transición, competición, entrenamiento, intensidad, objetivo, clima, rendimiento, calidad, diseño, confort, versatilidad, estilo, funcionalidad, durabilidad, resistencia, innovación">
-    <link rel="icon" type="image/x-icon" href="./images/icono.png">
+    <link rel="icon" type="image/x-icon" href="../images/icono.png">
 </head>
-
 <body>
+
     <header class="top-nav">
         
         <input type="checkbox" id="menu-toggle"/>
@@ -23,32 +23,65 @@
             <div class="menu-button"></div>
         </label>
         <ul class="menu">
-            <li><a href="./pages/productWomen.html">Mujeres</a></li>
-            <li><a href="./pages/productMen.html">Hombre</a></li>
+            <li><a href="productWomen.html">Mujeres</a></li>
+            <li><a href="productMen.html">Hombre</a></li>
         </ul>
         
         
     
-        <div class="logo"><a href="index.html"><img src="./images/logo.svg" alt="logo"></a></div>
+        <div class="logo"><a href="../index.html"><img src="../images/logo.svg" alt="logo"></a></div>
     
         <ul class="menu-other">
-            <li><a href="./pages/contacto.html">Contacto</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
         </ul>
 
     </header>
 
 
-    <section class="title">
-        <h1>Empujando los Limites</h1>
+    <section class="sectionGrid">
+
+    
+    <div id="container">
+        <h1>Hoja de contacto</h1>
+        <form action="#" method="post" id="contact_form">
+          <div class="name">
+            <label for="name"></label>
+            <input type="text" placeholder="M nombre..." name="name" id="name_input" required>
+          </div>
+          <div class="email">
+            <label for="email"></label>
+            <input type="email" placeholder="Mi e-mail..." name="email" id="email_input" required>
+          </div>
+          <div class="telephone">
+            <label for="name"></label>
+            <input type="text" placeholder="My numero..." name="telephone" id="telephone_input" required>
+          </div>
+          <div class="subject">
+            <label for="subject"></label>
+            <select placeholder="Subject line" name="subject" id="subject_input" required>
+              <option disabled hidden selected>Tema</option>
+              <option>Problema de un producto</option>
+              <option>Reclamo y devolución</option>
+              <option>Propuesta de negocio</option>
+            </select>
+          </div>
+          <div class="message">
+            <label for="message"></label>
+            <textarea name="message" placeholder="Escriba aqui..." id="message_input" cols="30" rows="5" required></textarea>
+          </div>
+          <div class="submit">
+            <input type="submit" value="Enviar" id="form_button" />
+          </div>
+        </form>
+      </div>
     </section>
 
+   
 
 
-    <section class="landingPage">
-        <img src="./images/portada.jpg" alt="MujerRopa">
-        <a class= "landingPage_button" href="./pages/productWomen.html">Conoce Más</a>
-        
-    </section>
+
+
+
 
     <footer class="footer">
 
@@ -65,13 +98,13 @@
             <h2>Necesitas Ayuda</h2>
             <ul>
                 <li>
-                    <a href="./pages/preguntas.html">Centro de Ayuda</a>
+                    <a href="preguntas.html">Centro de Ayuda</a>
                 </li>
                 <li>
-                    <a href="./pages/preguntas.html">Seguimiento de Envio</a>
+                    <a href="preguntas.html">Seguimiento de Envio</a>
                 </li>
                 <li>
-                    <a href="./pages/preguntas.html">Cambio y devoluciones</a>
+                    <a href="preguntas.html">Cambio y devoluciones</a>
                 </li>
             </ul>
         </nav> 
@@ -80,16 +113,16 @@
             <h2>Más Información</h2>
             <ul>
                 <li>
-                    <a href="./pages/preguntas.html">Tiendas</a>
+                    <a href="preguntas.html">Tiendas</a>
                 </li>
                 <li>
-                    <a href="./pages/preguntas.html">Distribuidores</a>
+                    <a href="preguntas.html">Distribuidores</a>
                 </li>
                 <li>
-                    <a href="./pages/preguntas.html">Centro de Ayuda</a>
+                    <a href="preguntas.html">Centro de Ayuda</a>
                 </li>
                 <li>
-                    <a href="./pages/preguntas.html">Termino y Condiciones</a>
+                    <a href="preguntas.html">Termino y Condiciones</a>
                 </li>
             </ul>
         </nav> 
@@ -98,4 +131,5 @@
     </footer>
 
 </body>
+
 </html>
